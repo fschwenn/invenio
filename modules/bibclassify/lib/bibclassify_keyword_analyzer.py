@@ -140,7 +140,7 @@ def get_composite_keywords(ckw_db, fulltext, skw_spans):
         except KeyError:
             # Some of the keyword components are not to be found in the text.
             # Therefore we cannot continue because the match is incomplete.
-            continue
+            pass
 
 
         ckw_spans = []
